@@ -31,7 +31,7 @@ toggleSkillsBtn.addEventListener("click", () => {
 const msgBox = document.getElementById("message");
 const counter = document.getElementById("counter");
 msgBox.addEventListener("keyup", () => {
-  const remaining = 200 - msgBox.value.length;
+  const remaining = 1000 - msgBox.value.length;
   counter.textContent = remaining;
 });
 
@@ -71,5 +71,6 @@ if (hour < 12) {
 } else {
   message = "Good Evening!";
 }
+
 
 greeting.textContent = message;
